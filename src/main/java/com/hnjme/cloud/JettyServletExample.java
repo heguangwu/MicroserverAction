@@ -23,7 +23,6 @@ public class JettyServletExample {
         context.setContextPath("/demo");
         server.setHandler(context);
 
-        //设置Servlet及path
         context.addServlet(new ServletHolder(new HelloServlet("John")), "/name");
         context.addServlet(new ServletHolder(new HelloServlet("33")), "/age");
 
